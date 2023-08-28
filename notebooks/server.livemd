@@ -12,6 +12,10 @@ Mix.install(
 )
 ```
 
+## Run in Livebook
+
+[![Run in Livebook](https://livebook.dev/badge/v1/blue.svg)](https://livebook.dev/run?url=https%3A%2F%2Fgithub.com%2Fsorabatake%2Farticle_33381_livebook%2Fblob%2Fmain%2Fnotebooks%2Fserver.livemd)
+
 ## Load models
 
 ```elixir
