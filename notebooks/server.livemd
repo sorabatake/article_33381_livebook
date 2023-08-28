@@ -8,7 +8,12 @@ Mix.install(
     {:axon_onnx, "~> 0.4"},
     {:kino, "~> 0.10"}
   ],
-  config: [nx: [default_backend: EXLA.Backend]]
+  config: [
+    nx: [
+      default_backend: EXLA.Backend,
+      default_defn_options: [compiler: EXLA]
+    ]
+  ]
 )
 ```
 
@@ -17,11 +22,6 @@ Mix.install(
 [![Run in Livebook](https://livebook.dev/badge/v1/blue.svg)](https://livebook.dev/run?url=https%3A%2F%2Fgithub.com%2Fsorabatake%2Farticle_33381_livebook%2Fblob%2Fmain%2Fnotebooks%2Fserver.livemd)
 
 ## Load models
-
-```elixir
-Nx.Defn.default_options(compiler: EXLA)
-Nx.global_default_backend(EXLA.Backend)
-```
 
 ```elixir
 classes = ["clear", "cloudy"]
